@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%; /* Set the maximum width to 100% */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+   
+}
+main {
+    flex: 1; /* Let the main content take up remaining space */
+}
+header {
+    background: linear-gradient(to left, #9333ea, #3b82f6, #9333ea);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+nav {
+    background: #4f2d7f !important;
+    padding: 10px;
+    top: 0;
+    position: sticky;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #9333ea;
+}
+
+
+#home-text {
+    font-size: 40px;
+    overflow: hidden;
+    color: white;
+    border-right: 2px solid #9333ea;
+    white-space: nowrap;
+    animation: typingAnimation 6s steps(20, end) infinite;
+    cursor: pointer;
+}
+
+
+@keyframes typingAnimation {
+    0% {
+        width: 0;
+    }
+
+    60% {
+        width: 100%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.hero-image {
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 0.5px solid white;
+    color: white;
+    background-color: #9333ea;
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+footer {
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn {
+    border: 1px solid #9333ea;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+
+
+#title-text{
+    font-size: 30px;
+    color: #9333ea;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.about-us{
+    background-color: #efefef;
+}
+
+.about-us-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+#about-us{
+    flex-basis: 50%;
+}
+
+.about-us-img{
+    flex-basis: 50%;
+}
+
+.about-us-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.mt20{
+    margin-top: 20px;
+}
+.about-us-description{
+    display: flex;
+    align-items: center;
+    
+ }
+
+
+ .about-us-description-text p{
+    padding: 10px;
+    text-align: initial;
+ }
+
+ #about-us-feature{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+ }
+
+ /* why join us */
+ .join-us-container{
+    display: flex;
+    padding: 15px;
+    text-align: center;
+    flex-wrap: wrap;
+    
+ }
+ .item{
+    flex: 0 0 50%;
+ }
+
+ .icon-text-container{
+    display: flex;
+ }
+
+ .feature-icon .fas{
+    color: #9333ea;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    line-height: 30px;
+    align-items: center;
+    margin: 10px 10px;
+ }
+ .feature-text p{
+    padding: 0;
+    margin: 10px 10px;
+    line-height: 30px;
+    text-align: left;
+ }
+
+
+ /* Courses */
+ .course-description-text p{
+    text-align: center;
+    margin: 0 5px;
+    padding: 0 100px;
+    line-height: 35px;
+ }
+
+ /* Section */
+
+ #our-courses{
+    width: 100%;
+ }
+
+ .courses-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    
+ }
+
+ .single-course{
+    flex-basis: 48%;
+    text-align: center;
+    border: 1px solid #9333ea;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:   mediumslateblue;
+ }
+
+ .single-course img{
+    width: 15%;
+    padding: 15px;
+    border-radius: 7px;
+ }
+ 
+ .course-description h3{
+    padding: 5px;
+    font-size: 16px;
+    color: #fff;
+ }
+
+ .course-description p{
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 26px;
+ }
+
+ /* Contact */
+
+ .contact-title{
+    color: white !important;
+ }
+
+.contact-us-row{
+    color: white;
+    
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-right{
+    margin-left: 50px;
+}
+.contact-right , .contact-left{
+    flex-basis: 40%;
+    padding: 10px;
+}
+
+.contact-left{
+    text-align: left;
+}
+.contact-us-row h1{
+    margin: 10px 0;
+}
+
+.contact-us-row p{
+    line-height: 35px;
+}
+.contact-right .fas{
+    font-size: 20px;
+    color: #9333ea;
+    margin: 10px;
+}
+
+#contact{
+    background: url('contact.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.input-box input, textarea{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #9333ea;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.submit-button{
+    width: 50%;
+    border: 1px solid #fff;
+    background-color: #9333ea;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav a {
+        font-size: 13px;
+    }
+
+    #home-text {
+        font-size: 20px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+    .cta-buttons a {
+        padding: 8px 16px;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width:768px){
+    #about-us{
+        width: 100%;
+        flex-basis: 100%;
+    } 
+
+    .about-us-img{
+        order: -1;
+        flex-basis: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .about-us-img img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .join-us-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        
+        flex-wrap: wrap;
+        
+     }
+
+     .item{
+        flex-basis:100%;
+     }
+
+     .feature-icon .fas{
+        color: #9333ea;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #9333ea;
+        border-radius: 5px;
+        line-height: 23px;
+        margin: 10px;
+        padding: 4px;
+     }
+     .feature-text p{
+        padding: 4px;
+        margin: 4px;
+        line-height: 23px;
+        text-align: left;
+     }
+
+     .title-why-join-us{
+        text-align: center !important;
+     }
+
+    
+}
+
+@media screen and (max-width:768px){
+
+    .course-description-text p{
+        text-align: center;
+        margin: 0;
+        padding: 0 10px;
+        line-height: 25px;
+     }
+
+     .single-course{
+        flex-basis: 100%;
+        text-align: center;
+        border: 1px solid #9333ea;
+        border-radius: 2px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color:   mediumslateblue;
+     }
+
+     .single-course img{
+        width: 35%;
+        padding: 15px;
+        border-radius: 7px;
+     }
+
+     .course-description p{
+        color: white;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        line-height: 22px;
+     }
+}
+
+
+@media screen and (max-width:768px){
+    .contact-us-row{
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .contact-right{
+        text-align: left;
+    }
+    .contact-right , .contact-left{
+        flex-basis: 100%;
+        
+    }
+
+    .input-box input, textarea{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border: 1px solid #9333ea;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+
+    .contact-left{
+        text-align: left;
+    }
+    .contact-us-row h1{
+        margin: 0;
+    }
+    .contact-right{
+        margin-left: 0 !important;
+        text-wrap: wrap;
+    }
+    
+    .contact-us-row p{
+        line-height: 35px;
+    }
+    .contact-right .fas{
+        font-size: 20px;
+        color: #9333ea;
+        margin: 10px;
+    }
+}
+
+

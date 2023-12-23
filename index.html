@@ -10,8 +10,27 @@
 </head>
 
 <body>
-
-
+    <div class="overlay" onclick="closeModal()"></div>
+    <div class="contact-form">
+        <form action="">
+            <span onclick="closeModal()">&times;</span>
+            <div class="input-box">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="input-box">
+                <label for="mob_no">Mobile no.</label>
+                <input type="text" name="mob_no" id="mob_no" required>
+            </div>
+           
+               <input type="submit" name="submit" value="Send" class="submit-button">
+           
+        </form>
+    </div>
     <nav>
         <a href="#home">HOME</a>
         <a href="#about-us">ABOUT US</a>
@@ -25,8 +44,8 @@
                 <p  style="text-align: center;"><b>Want to Speak French Fluently and Effortlessly?</b></p>
                 <p id="home-text">Presential and Online classes</p>
                 <div class="cta-buttons">
-                    <a href="">Brochure</a>
-                    <a href="">Enroll Now</a>
+                   <a href="#">Brochure</a>
+                    <a href="#"  onclick="showModal()">Enroll Now</a>
                 </div>
             </div>
         </section>
@@ -361,6 +380,18 @@
 	speed: 500,
 	speedAsDuration: true
          })
+    </script>
+
+    <script>
+        function showModal(){
+            document.querySelector('.overlay').classList.add('showoverlay');
+            document.querySelector('.contact-form').classList.add('show-contact-form');
+        }
+
+        function closeModal(){
+            document.querySelector('.overlay').classList.remove('showoverlay');
+            document.querySelector('.contact-form').classList.remove('show-contact-form');
+        }
     </script>
 </body>
 
